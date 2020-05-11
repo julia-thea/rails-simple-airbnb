@@ -17,30 +17,11 @@
     <div class="col"><p> All <%= @flats.length() %> of them</p></div>
   </div>
   <div class="row">
-        <% @flats.each do |flat| %>
+    <% @flats.each do |flat| %>
       <div class="col-4">
-        <div class="flat-card">
-          <div class="flat-card-content">
-            <div class="flat-card-title">
-              <h4><%= flat.name %></h4>
-            </div>
-            <p><%= flat.address %></p>
-          </div>
-          <div class="flat-card-actions">
-                      <div class="flex">
-              <div class="flex">
-                <i class="material-icons mr-2">people</i><span><%= flat.number_of_guests %></span>
-              </div>
-              <div class="flex ml-3">
-                <i class="material-icons mr-2">euro_symbol</i> <%= flat.price_per_night %>
-                <i class="fas fa-user-friends"></i>
-              </div>
-            </div>
-            <a href="#">Link</a>
-          </div>
-        </div>
+        <h4><%= flat.name %></h4>
+        <p><%= flat.address %></p>
       </div>
     <% end %>
-  </div>
   </div>
 </div>
